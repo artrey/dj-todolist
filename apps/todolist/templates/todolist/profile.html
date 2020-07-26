@@ -1,0 +1,9 @@
+{% extends 'todolist/base.html' %}
+
+{% block after_footer %}
+  <p style="text-align: center">In profile</p>
+
+  {% for p in people %}
+    {% include 'todolist/card_info.html' with name=p.name info=p.info %}
+  {% endfor %}
+{% endblock %}

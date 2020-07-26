@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}Title{% endblock %}</title>
+</head>
+<body>
+<h1 style="color: green">Header</h1>
+{% block main %}{% endblock %}
+<h2 style="color: magenta">Footer</h2>
+{% block after_footer %}After footer{% endblock %}
+</body>
+</html>
